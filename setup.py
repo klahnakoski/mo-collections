@@ -44,7 +44,7 @@ def find_packages(where='.', lib_prefix='', exclude=()):
 
 setup(
     name='mo-collections',
-    version="1.1.17048",
+    version="1.1.17049",
     description='More Collections! Some useful data structures for dealing with Data',
     long_description=long_desc,
     author='Kyle Lahnakoski',
