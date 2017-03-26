@@ -44,7 +44,7 @@ def find_packages(where='.', lib_prefix='', exclude=()):
 
 setup(
     name='mo-collections',
-    version="1.1.17056",
+    version="1.1.17085",
     description='More Collections! Some useful data structures for dealing with Data',
     long_description=long_desc,
     author='Kyle Lahnakoski',
@@ -52,7 +52,7 @@ setup(
     url='https://github.com/klahnakoski/mo-collections',
     license='MPL 2.0',
     packages=find_packages(".", lib_prefix=""),
-    install_requires=["mo-dots", "mo-logs", "mo-kwargs"],
+    install_requires=["mo-dots", "mo-kwargs", "mo-logs"],
     include_package_data=True,
     zip_safe=False,
     classifiers=[  #https://pypi.python.org/pypi?%3Aaction=list_classifiers
