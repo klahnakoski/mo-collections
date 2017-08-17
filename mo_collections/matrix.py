@@ -11,6 +11,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import unicode_literals
 
+from future.utils import text_type
 from mo_dots import Null, Data, coalesce, get_module
 from mo_kwargs import override
 from mo_logs import Log
@@ -379,9 +380,11 @@ def index_to_coordinate(dims):
             commands.append("\tc" + text_type(i) + ", index = divmod(index, " + text_type(prod[i]) + ")")
         coords.append("c" + text_type(i))
     output = None
-    code = "def output(index):\n" + \
-         "\n".join(commands) + "\n" + \
-         "\treturn " + ", ".join(coords)
+    code = (
+        "def output(index):\n" + \
+        "\n".join(commands) + "\n" + \
+        "\treturn tuple(" + ", ".join(coords) + ")"
+    )
     exec code
     return output
 
