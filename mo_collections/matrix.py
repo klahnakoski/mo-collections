@@ -360,10 +360,12 @@ def index_to_coordinate(dims):
     """
     _ = divmod  # SO WE KEEP THE IMPORT
 
-    if len(dims) == 1:
-        return _identity
-
     num_dims = len(dims)
+    if num_dims == 1:
+        return _identity
+    elif num_dims == 0:
+        return lambda c: tuple()
+
     prod = [1] * num_dims
     acc = 1
     domain = range(0, num_dims)
@@ -381,10 +383,11 @@ def index_to_coordinate(dims):
         coords.append("c" + text_type(i))
     output = None
     code = (
-        "def output(index):\n" + \
-        "\n".join(commands) + "\n" + \
-        "\treturn tuple(" + ", ".join(coords) + ")"
+        "def output(index):\n" +
+        "\n".join(commands) + "\n" +
+        "\treturn " + ", ".join(coords)
     )
+
     exec code
     return output
 
