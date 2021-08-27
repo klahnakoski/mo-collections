@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     author='Kyle Lahnakoski',
     author_email='kyle@lahnakoski.com',
-    classifiers=["Development Status :: 4 - Beta","License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)","Programming Language :: Python :: 2.7","Programming Language :: Python :: 3.7","Topic :: Software Development :: Libraries","Topic :: Software Development :: Libraries :: Python Modules"],
+    classifiers=["Development Status :: 4 - Beta","License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)","Programming Language :: Python :: 3.7","Programming Language :: Python :: 3.9","Topic :: Software Development :: Libraries","Topic :: Software Development :: Libraries :: Python Modules"],
     description='More Collections! Some useful data structures for dealing with Data',
     include_package_data=True,
     install_requires=["mo-dots==5.22.21182","mo-future==5.17.21182","mo-kwargs==5.23.21182","mo-logs==5.23.21182"],
@@ -15,5 +15,5 @@ setup(
     name='mo-collections',
     packages=["mo_collections"],
     url='https://github.com/klahnakoski/mo-collections',
-    version='5.36.21239'
+    version='5.37.21239'
 )
