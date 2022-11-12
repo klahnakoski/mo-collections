@@ -7,6 +7,9 @@
 #
 # Contact: Kyle Lahnakoski (kyle@lahnakoski.com)
 #
+
+from __future__ import absolute_import, division, unicode_literals
+
 from copy import copy
 
 from mo_dots import get_attr, is_data, is_sequence, tuplewrap, from_data, to_data
