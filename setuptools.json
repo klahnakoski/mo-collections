@@ -14,8 +14,8 @@
     "extras_require": {"tests": ["mo-testing"]},
     "include_package_data": true,
     "install_requires": [
-          "mo-dots==9.291.22344", "mo-future==6.291.22344", "mo-kwargs==7.291.22344",
-          "mo-logs==7.291.22344"
+          "mo-dots==9.279.22339", "mo-future==6.265.22338", "mo-kwargs==7.279.22339",
+          "mo-logs==7.279.22339"
     ],
     "license": "MPL 2.0",
     "long_description": {
@@ -54,5 +54,5 @@
     "name": "mo-collections",
     "packages": ["mo_collections"],
     "url": "https://github.com/klahnakoski/mo-collections",
-    "version": "5.291.22344"
+    "version": "5.292.22344"
 }
