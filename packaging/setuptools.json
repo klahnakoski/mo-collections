@@ -8,14 +8,15 @@
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Topic :: Software Development :: Libraries",
-        "Topic :: Software Development :: Libraries :: Python Modules"
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Programming Language :: Python :: 3.11"
     ],
     "description": "More Collections! Some useful data structures for dealing with Data",
     "extras_require": {"tests": ["mo-testing"]},
     "include_package_data": true,
     "install_requires": [
-          "mo-dots==9.417.23168", "mo-future==7.416.23168", "mo-kwargs==7.417.23168",
-          "mo-logs==8.417.23168"
+          "mo-dots==9.430.23234", "mo-future==7.428.23214", "mo-kwargs==7.434.23241",
+          "mo-logs==8.434.23241"
     ],
     "license": "MPL 2.0",
     "long_description": {
@@ -54,5 +55,5 @@
     "name": "mo-collections",
     "packages": ["mo_collections"],
     "url": "https://github.com/klahnakoski/mo-collections",
-    "version": "5.417.23168"
+    "version": "5.434.23241"
 }
