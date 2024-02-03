@@ -8,12 +8,12 @@ setup(
     description='More Collections! Some useful data structures for dealing with Data',
     extras_require={"tests":["mo-testing"]},
     include_package_data=True,
-    install_requires=["mo-dots==9.520.24032","mo-future==7.520.24032","mo-kwargs==7.520.24032","mo-logs==8.522.24033"],
+    install_requires=["mo-dots==9.527.24034","mo-future==7.520.24032","mo-kwargs==7.527.24034","mo-logs==8.527.24034"],
     license='MPL 2.0',
     long_description="More Collections\n================\n\nSome useful data structures for collections of data\n\n\n### Class `Index`\n\nProvide indexing for a list. Inner properties can be used for keys, and keys can be tuples of properties.  \n\n### Class `UniqueIndex`\n\nSame as Index, but includes checks and optimization to ensure members' keys are unique.\n\n### Class `Queue`\n\nA `Queue` is a list, with `add()` and `pop()`. It ensures members in the queue are not duplicated by not adding the ones already found in the queue.\n\n### Class `Matrix`\n\nA multidimensional grid of values that can be used like a `Mapping` from a-tuple-of-coordinates to the value at that coordinate. Plus a few other convenience methods.\n\nThis is a naive implementation. The hope it is a simple facade to a faster implementation.\n\n### Class `Relation`\n\nStore the many-to-many relations between two domains     ",
     long_description_content_type='text/markdown',
     name='mo-collections',
     packages=["mo_collections"],
     url='https://github.com/klahnakoski/mo-collections',
-    version='5.522.24033'
+    version='5.527.24034'
 )
