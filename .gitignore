@@ -3,7 +3,7 @@
 /build
 .svn
 .idea
-
+.eggs
 /setup.py
 
 
