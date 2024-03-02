@@ -1,9 +1,9 @@
-# Tests pass with these versions 2024-02-27
-mo-dots==9.547.24058
+# Tests pass with these versions 2024-03-02
+mo-dots==9.549.24062
 mo-future==7.546.24057
 mo-imports==7.546.24057
-mo-kwargs==7.547.24058
-mo-logs==8.547.24058
+mo-kwargs==7.551.24062
+mo-logs==8.551.24062
 mo-math==7.521.24032
 mo-testing==7.523.24033
 mo-threads==6.522.24033
