@@ -16,13 +16,12 @@
     "include_package_data": true,
     "install_requires": [
           "mo-dots==9.549.24062", "mo-future==7.546.24057", "mo-kwargs==7.551.24062",
-          "mo-logs==8.551.24062"
+          "mo-logs==8.556.24070"
     ],
     "license": "MPL 2.0",
     "long_description": {
         "$concat": [
-            "More Collections",
-            "================",
+            "# More Collections",
             "",
             "Some useful data structures for collections of data",
             "",
@@ -55,5 +54,5 @@
     "name": "mo-collections",
     "packages": ["mo_collections"],
     "url": "https://github.com/klahnakoski/mo-collections",
-    "version": "5.553.24062"
+    "version": "5.556.24070"
 }
