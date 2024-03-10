@@ -1,5 +1,4 @@
-More Collections
-================
+# More Collections
 
 Some useful data structures for collections of data
 
