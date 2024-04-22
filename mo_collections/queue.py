@@ -13,6 +13,7 @@
 
 from collections import deque
 from copy import copy
+from mo_dots import register_many
 
 
 class Queue:
