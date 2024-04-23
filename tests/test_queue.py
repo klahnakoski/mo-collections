@@ -9,9 +9,10 @@
 from __future__ import unicode_literals
 
 from mo_collections.queue import Queue
-from mo_testing.fuzzytestcase import FuzzyTestCase
+from mo_testing.fuzzytestcase import FuzzyTestCase, add_error_reporting
 
 
+@add_error_reporting
 class TestQueue(FuzzyTestCase):
     def test_add(self):
         test = Queue()
