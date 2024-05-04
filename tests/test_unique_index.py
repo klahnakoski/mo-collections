@@ -9,9 +9,10 @@
 from __future__ import unicode_literals
 
 from mo_collections.unique_index import UniqueIndex
-from mo_testing.fuzzytestcase import FuzzyTestCase
+from mo_testing import FuzzyTestCase, add_error_reporting
 
 
+@add_error_reporting
 class TestUniqueIndex(FuzzyTestCase):
     def test_single_key(self):
         data = [
@@ -34,13 +35,34 @@ class TestUniqueIndex(FuzzyTestCase):
 
         self.assertEqual(i | s, data)
         self.assertEqual(s | i, [
+            {"a": 4, "b": "x"},
             {"a": 1, "b": "w"},
             {"a": 2, "b": "x"},
             {"a": 3, "b": "y"},
-            {"a": 4, "b": "x"}
         ])
 
         self.assertEqual(i & s, [{"a": 4, "b": "z"}])
+
+    def test_single_key1(self):
+        data = [
+            {"a": 1, "b": "w"},
+            {"a": 2, "b": "x"},
+            {"a": 3, "b": "y"},
+            {"a": 4, "b": "z"}
+        ]
+
+        i = UniqueIndex(["a"], data=data)
+        s = UniqueIndex(["a"])
+
+        s.add({"a": 4, "b": "x"})
+
+        self.assertEqual(s | i, [
+            {"a": 4, "b": "x"},
+            {"a": 1, "b": "w"},
+            {"a": 2, "b": "x"},
+            {"a": 3, "b": "y"},
+        ])
+
 
     def test_double_key(self):
         data = [
