@@ -15,5 +15,5 @@ setup(
     name='mo-collections',
     packages=["mo_collections"],
     url='https://github.com/klahnakoski/mo-collections',
-    version='5.622.24125'
+    version='5.623.24125'
 )
