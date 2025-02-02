@@ -13,11 +13,11 @@
         "Programming Language :: Python :: 3.13"
     ],
     "description": "More Collections! Some useful data structures for dealing with Data",
-    "extras_require": {"tests": ["mo-testing>=8.623.24125"]},
+    "extras_require": {"tests": ["mo-testing>=8.648.24172"]},
     "include_package_data": true,
     "install_requires": [
          "mo-dots==10.659.25005", "mo-future==7.584.24095", "mo-kwargs==7.659.25005",
-          "mo-logs==8.659.25005"
+          "mo-logs==8.667.25032"
     ],
     "license": "MPL 2.0",
     "long_description": {
@@ -55,5 +55,5 @@
     "name": "mo-collections",
     "packages": ["mo_collections"],
     "url": "https://github.com/klahnakoski/mo-collections",
-    "version": "5.660.25006"
+    "version": "5.669.25033"
 }
