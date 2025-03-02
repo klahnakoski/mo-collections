@@ -13,7 +13,7 @@ from mo_dots import get_attr, is_data, is_sequence, tuplewrap, from_data, to_dat
 from mo_logs import Log
 
 
-class Index(object):
+class Index:
     """
     USING DATABASE TERMINOLOGY, THIS IS A NON-UNIQUE INDEX
     KEYS CAN BE DOT-DELIMITED PATHS TO DEEP INNER OBJECTS
@@ -48,7 +48,6 @@ class Index(object):
         self._data[key] = e
         e.append(from_data(val))
         self.count += 1
-
 
     def __contains__(self, key):
         expected = True if self[key] else False
@@ -91,8 +90,8 @@ class Index(object):
             return self._data.keys()
 
     def items(self):
-        if len(self._keys)==1:
-            return ((k[0], d) for k,d in self._data.items())
+        if len(self._keys) == 1:
+            return ((k[0], d) for k, d in self._data.items())
         else:
             return self._data.items()
 
@@ -153,10 +152,10 @@ class Index(object):
 def value2key(keys, val):
     if len(keys) == 1:
         if is_data(val):
-            return get_attr(val, keys[0]),
+            return (get_attr(val, keys[0]),)
         elif is_sequence(val):
-            return val[0],
-        return val,
+            return (val[0],)
+        return (val,)
     else:
         if is_data(val):
             return tuple(val[k] for k in keys)
